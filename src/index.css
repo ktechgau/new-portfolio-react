@@ -1,0 +1,47 @@
+/* index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html{
+    background-color:rgb(244 244 245);
+    scroll-behavior: smooth;
+}
+
+
+
+@layer base{
+    .li{
+        font-family: "serif";
+        text-transform: uppercase;
+        color: whitesmoke;
+    } 
+    .li :hover{
+        color: tan;
+        text-decoration: underline;
+    }
+   
+}
+@layer component{
+  
+    .neon{
+        font-family:"serif";
+        color: white;
+        text-transform: uppercase;
+        text-shadow: 
+            0 0 5px #ff80c0, 
+            0 0 15px #ff80c0, 
+            0 0 20px #ff80c0, 
+            0 0 40px #ff40a0, 
+            0 0 60px #ff40a0, 
+            0 0 10px #ff40a0, 
+            0 0 98px #ff0000;
+    }
+    .neon-img{
+        filter: 
+        drop-shadow(0 0 2px #00FFFF) 
+        drop-shadow(0 0 5px #00FFFF) 
+        drop-shadow(0 0 8px #00FFFF) 
+        drop-shadow(0 0 16px #007777);
+    }
+}
