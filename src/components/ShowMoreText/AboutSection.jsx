@@ -35,7 +35,7 @@ function AboutSection({handleShowMore, showMore}){
         <div className="overflow-hidden rounded-full shadow-2xl">
             <img src={me3} alt="picture of Karla Gaudet with her back turned, in a puddle of water spalshing with her foot"/>
         </div>
-        <div className={`p-2 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 ${marginTop}`}>
+        <div className={`p-2 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 overflow-wrap ${marginTop}`}>
             <p className="text-justify">
                 {showMore 
                 ? text

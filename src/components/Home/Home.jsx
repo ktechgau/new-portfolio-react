@@ -51,7 +51,7 @@ return(
         </div>  
     </section>
 
-    <section className="relative flex flex-row flex-wrap h-screen" id="about" ref={aboutRef} >
+    <section className="relative flex flex-row flex-wrap" id="about" ref={aboutRef} >
        <AboutSection handleShowMore={handleToggleShowMore} showMore={showMore}/> 
     </section>
     
