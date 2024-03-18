@@ -32,11 +32,9 @@ return(
         </div>
         {/* Normal menu bar for screens larger than 768px*/}
         <div className="hidden lg:block">
-            {/* <ul className={`${"menuItems"} ${menuOpen && "menuOpenStyle"}`} onClick={() => setMenuOpen(false)}> */}
             <ul className="flex space-x-8 text-xl"> 
                <li className="li"><Link to="/">Home</Link></li> 
-               <li className="li"><Link to="/portfolio">Portfolio</Link></li> 
-               <li className="li"><Link  to="/">Connect</Link></li> 
+               <li className="li"><Link  to="/connect">Contact</Link></li> 
                <li><a href="https://www.linkedin.com/in/karla-gaudet-b95b2b261/" 
                 target="_blank">
                 <img className="w-6 h-6"src={linkedin} alt="Linkedin Icon that takes yo to my LinkedIn profile"/></a>
@@ -50,8 +48,7 @@ return(
                     <div className="lg:hidden p-5">
                         <ul className="flex flex-col space-y-4 items-end pr-4">
                             <li className="li"><Link  to="/">Home</Link></li>
-                            <li className="li"><Link  to="/portfolio">Portfolio</Link></li>
-                            <li className="li"><Link  to="/">Connect</Link></li>
+                            <li className="li"><Link  to="/connect">Contact</Link></li>
                             <li>
                                 <a href="https://www.linkedin.com/in/karla-gaudet-b95b2b261/" target="_blank">
                                     <img className="w-6 h-6" src={linkedin} alt="Linkedin Icon that takes you to my LinkedIn profile"/>

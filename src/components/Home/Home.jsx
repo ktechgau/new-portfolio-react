@@ -5,7 +5,10 @@ import ReactJs from "../../assets/Work/ReactJs.png";
 import icons from "../../assets/Hero/icons.png"
 import opendoor from "../../assets/Work/opendoor.png";
 import penguin from "../../assets/Work/penguin.jpg";
+import puredjango from "../../assets/Work/puredjango.jpg";
+import city from "../../assets/Work/city.jpg";
 import arrow from "../../assets/Hero/arrow.png";
+import py from "../../assets/Work/py.png";
 import Footer from "../Footer/Footer.jsx";
 import AboutSection from "../ShowMoreText/AboutSection.jsx";
 
@@ -13,6 +16,12 @@ function HomePage(){
     const aboutRef=useRef(null);
     const [showMore, setShowMore] = useState(false);
     const [aboutHeight, setAboutHeight] = useState('auto');
+    const [reactToggle, setReactToggle] = useState (false);
+    const [drfToggle, setDrfToggle] = useState (false);
+    const [cssToggle, setCssToggle] = useState (false);
+    const [skyToggle, setSkyToggle] = useState (false);
+    const [djangoToggle, setDjangoToggle] = useState (false);
+    const [pyToggle, setPyToggle] = useState (false);
 
     const handleScroll = (ref) =>{
         window.scrollTo({
@@ -20,6 +29,24 @@ function HomePage(){
             left:0,
             behavior:"smooth",
         })
+    }
+    const handleReactToggle = () => {
+        setReactToggle(!reactToggle);
+    }
+    const handlePyToggle = () => {
+        setPyToggle(!pyToggle);
+    }
+    const handleDrfToggle = () => {
+        setDrfToggle(!drfToggle);
+    }
+    const handleCssToggle = () => {
+        setCssToggle(!cssToggle);
+    }
+    const handleSkyToggle = () => {
+        setSkyToggle(!skyToggle);
+    }
+    const handleDjangoToggle = () => {
+        setDjangoToggle(!djangoToggle);
     }
 
     const handleToggleShowMore = () => {
@@ -30,6 +57,8 @@ function HomePage(){
             setAboutHeight(aboutRef.current.offsetHeight);
         }
     }, [showMore]);
+
+
 
 return(
     <>
@@ -55,40 +84,134 @@ return(
        <AboutSection handleShowMore={handleToggleShowMore} showMore={showMore}/> 
     </section>
     
-    <section className="portfolio">
-        <div>Projects</div>
+    <section className="relative flex flex-row flex-wrap">
+        <div className="p-6 mt-8">
+            <p className="text-xl">Learn.Create.Repeat</p>
+            <h2 className="neon text-2xl m-4">My Projects</h2>
+        </div>
     </section>
 
-    <section className="work">
-        <article>
-            <a href="https://opendoor.netlify.app/" target="_blank">
-                <img src={ReactJs} alt="screenshot image of my React JS project that leads to the live site"/>
-            </a>
-            <p> React JS</p>
-            <p>Frontend Development using React JS sourcing APIs I created using Django REST</p>     
-            <a href="https://github.com/ktechgau/crowdfunding_front_end" target="_blank">View on Git</a>    
-        </article>
-
-        <article>
-            <a href="https://drf-patient-pond-1056.fly.dev/projects/" target="_blank">
-                <img src={opendoor} alt="logo of my Django REST project that leads to the live site"/>
-            </a>
-                <p> Django REST</p>
-                <p>Backend Development creating APIs for a crowdfunding site</p>   
-                <a href="https://github.com/ktechgau/crowdfunding_back_end" target="_blank">View on Git</a>           
-        </article>
-
-        <article>
-            <a href="https://codepen.io/ktechgau/pen/GRYyNre" target="_blank">
-                <img src={penguin} alt="screenshot of an animated penguin I made using css. Link leads to codepen"/>
-            </a>
-                <p> CSS Animations</p>
-                <p>Learning CSS animations with FreeCodeCamp</p>            
-        </article>
-
-        <div className="button">
-            <Link to="/portfolio">View More</Link>
+    <section className=" p-4 my-4 mx-6 border-t-2 border-r-2 border-dotted border-zinc-300">
+       <div className="flex items-center justify-between border-b border-gray-500 cursor-pointernpy-2 px-4"
+        onClick={handleReactToggle} >
+            <span className="text-lg">OpenDoor - Frontend</span>
+            <span className="text-2xl text-white outline-4 outline-green-950 neon-img">{reactToggle ? '▲'  : '▼'}</span>
         </div>
+
+       {reactToggle && (
+        <article className="work">
+            <div className="work-img">
+                <a href="https://opendoor.netlify.app/" target="_blank">
+                    <img  src={ReactJs} alt="screenshot image of my React JS project that leads to the live site"/>
+                </a>
+            </div>
+            <div className="mt-4">
+                <p><span className="uppercase"> stack:</span> React JS, HTML, CSS</p>
+                <p><span className="uppercase"> scope:</span> Frontend development using APIs created with Django REST. This was a project assignment of the She Codes Plus program.</p>     
+                <a className="underline text-tan " href="https://github.com/ktechgau/crowdfunding_front_end" target="_blank">View code</a>    
+            </div>
+        </article>
+       )}
+
+        <div className="flex items-center justify-between border-b border-gray-500 cursor-pointernpy-2 px-4"
+        onClick={handleDrfToggle}>
+            <span className="text-lg">OpenDoor - Backend</span>
+            <span className="text-2xl text-white outline-4 outline-green-950 neon-img">{drfToggle ? '▲' : '▼'}</span>
+        </div>
+        {drfToggle && (
+        <article className="work">
+            <div className="work-img">
+                <a href="https://drf-patient-pond-1056.fly.dev/projects/" target="_blank">
+                    <img src={opendoor} alt="logo of my Django REST project that leads to the live site"/>
+                </a>
+            </div>
+            <div className="mt-4">
+                <p> <span className="uppercase"> stack:</span> Django REST, Python</p>
+                <p><span className="uppercase"> scope:</span> Create APIs for a crowdfunding site using Django REST framework. This was a project assignment of the She Codes Plus program.</p>
+                <a className="underline text-tan " href="https://github.com/ktechgau/crowdfunding_back_end" target="_blank">View code</a>           
+            </div>
+        </article>
+        )}
+
+        <div className="flex items-center justify-between border-b border-gray-500 cursor-pointernpy-2 px-4"
+        onClick={handleCssToggle}>
+            <span className="text-lg">CSS Animations</span>
+            <span className="text-2xl text-white outline-4 outline-green-950 neon-img">{cssToggle ? '▲' : '▼'}</span>
+        </div>
+        {cssToggle && (
+        <article className="work">
+            <div className="work-img">
+                <a href="https://codepen.io/ktechgau/pen/GRYyNre" target="_blank">
+                    <img src={penguin} alt="screenshot of an animated penguin I made using css. Link leads to codepen"/>
+                </a>
+            </div>
+            <div className="mt-4">
+                <p> <span className="uppercase"> stack:</span> CSS</p>
+                <p><span className="uppercase"> scope:</span> Learn CSS animations through this tutorial via FCC</p>   
+                <a className="underline text-tan " href="https://codepen.io/ktechgau/pen/GRYyNre" target="_blank">View on Codepen</a>         
+            </div>
+        </article>
+        )}
+
+        <div className="flex items-center justify-between border-b border-gray-500 cursor-pointernpy-2 px-4"
+        onClick={handleSkyToggle}>
+            <span className="text-lg">CSS Media Queries</span>
+            <span className="text-2xl text-white outline-4 outline-green-950 neon-img">{skyToggle ? '▲' : '▼'}</span>
+        </div>
+        {skyToggle && (
+        <article className="work">
+            <div className="work-img">
+                <a href="https://codepen.io/ktechgau/pen/poxpNeb" target="_blank">
+                    <img src={city} alt="logo of my CSS Skyline project that leads to the live site"/>
+                </a>
+            </div>
+            <div className="mt-4">
+                <p> <span className="uppercase"> stack:</span> CSS</p>
+                <p><span className="uppercase"> scope:</span> Learning media query, z-index and creatings shapes via FCC</p>
+                <a className="underline text-tan " href="https://codepen.io/ktechgau/pen/poxpNeb" target="_blank">View on Codepen</a>           
+            </div>
+        </article>
+        )}
+
+        <div className="flex items-center justify-between border-b border-gray-500 cursor-pointernpy-2 px-4"
+        onClick={handleDjangoToggle}>
+            <span className="text-lg">She Codes News</span>
+            <span className="text-2xl text-white outline-4 outline-green-950 neon-img">{djangoToggle ? '▲' : '▼'}</span>
+        </div>
+        {djangoToggle && (
+        <article className="work">
+            <div className="work-img">
+                <a href="https://www.youtube.com/watch?v=RX3jeoCbZSg" target="_blank">
+                    <img src={puredjango} alt="a screenshot of my django news site that links to a youtube video run through of the site"/>
+                </a>
+            </div>
+            <div className="mt-4">
+                <p> <span className="uppercase"> stack:</span> Django, Python</p>
+                <p><span className="uppercase"> scope:</span> Using Django framework, I was to create a news room site for She Codes Australia. This project was not deployed. This was a project assignment of the She Codes Plus program.</p>
+                <a className="underline text-tan " href="https://github.com/ktechgau/she_codes_news" target="_blank">View code</a>           
+            </div>
+        </article>
+        )}
+
+        <div className="flex items-center justify-between border-b border-gray-500 cursor-pointernpy-2 px-4"
+        onClick={handlePyToggle}>
+            <span className="text-lg">Data Manipulation</span>
+            <span className="text-2xl text-white outline-4 outline-green-950 neon-img">{pyToggle ? '▲' : '▼'}</span>
+        </div>
+        {pyToggle && (
+        <article className="work">
+            <div className="work-img">
+                <a href="https://www.youtube.com/watch?v=RX3jeoCbZSg" target="_blank">
+                    <img src={py} alt="a screenshot of my django news site that links to a youtube video run through of the site"/>
+                </a>
+            </div>
+            <div className="mt-4">
+                <p> <span className="uppercase"> stack:</span> Python</p>
+                <p><span className="uppercase"> scope:</span> Practising some fundamental concepts of Python by manipulating data for a Weather App. This project was not deployed. This was a project assignment of the She Codes Plus program.</p>
+                <a className="underline text-tan " href="https://github.com/ktechgau/Weather_Project" target="_blank">View code</a>           
+            </div>
+        </article>
+        )}
 
     </section>
     

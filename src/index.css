@@ -20,6 +20,10 @@ html{
         color: tan;
         text-decoration: underline;
     }
+    .link :hover{
+        color: tan;
+        text-decoration: underline;
+    }
    
 }
 @layer component{
@@ -39,9 +43,38 @@ html{
     }
     .neon-img{
         filter: 
+        drop-shadow(0 0 16px #007777)
         drop-shadow(0 0 2px #00FFFF) 
         drop-shadow(0 0 5px #00FFFF) 
-        drop-shadow(0 0 8px #00FFFF) 
         drop-shadow(0 0 16px #007777);
+    }
+    .neon-yellow{
+        filter: 
+        drop-shadow(0 0 1px #777700)
+        drop-shadow(0 0 2px #FFFF00) 
+        drop-shadow(0 0 5px #FFFF00) 
+        drop-shadow(0 0 16px #777700);
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem auto;
+        padding: .5rem;
+        align-items: center;
+        border: solid 3px blue; 
+    }
+    .work-img{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 36vh;
+        height: auto;
+        align-items: center;
+    }
+    .work-img img{
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
     }
 }
