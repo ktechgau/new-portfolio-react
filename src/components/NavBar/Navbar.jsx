@@ -11,6 +11,10 @@ import "../../index.css";
 function NavBar(){
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const handleClick = () =>{
+        setMenuOpen(false);
+   };
+
 
 return(
     <>
@@ -47,8 +51,8 @@ return(
         {menuOpen && (
                     <div className="lg:hidden p-5">
                         <ul className="flex flex-col space-y-4 items-end pr-4">
-                            <li className="li"><Link  to="/">Home</Link></li>
-                            <li className="li"><Link  to="/connect">Contact</Link></li>
+                            <li className="li"><Link  to="/" onClick={handleClick}>Home</Link></li>
+                            <li className="li"><Link  to="/connect" onClick={handleClick}>Contact</Link></li>
                             <li>
                                 <a href="https://www.linkedin.com/in/karla-gaudet-b95b2b261/" target="_blank">
                                     <img className="w-6 h-6" src={linkedin} alt="Linkedin Icon that takes you to my LinkedIn profile"/>

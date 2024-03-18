@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import "../../index.css";
+import Footer from '../Footer/Footer';
 
 function ContactForm() {
     const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -44,6 +45,7 @@ function ContactForm() {
   };
 
   return (
+    <>
     <section className=" m-3">
         <form className="bg-gradient-to-b from-black via-stone-300 shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
             <div className="mb-5 mt-5">
@@ -83,7 +85,7 @@ function ContactForm() {
                 />
             </div>
             <div className="flex items-center justify-center">
-                <button className="neon-img text-md text-white uppercase py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+                <button className="neon-img text-lg text-white uppercase py-2 px-4 mt-6 mb-5 rounded focus:outline-none focus:shadow-outline" 
                     type="submit">Submit
                 </button>
             </div>
@@ -94,7 +96,7 @@ function ContactForm() {
         </form>
     </section>
 
-    
+</>
   );
 }
 

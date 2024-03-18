@@ -63,7 +63,7 @@ function HomePage(){
 return(
     <>
     <section className="relative flex flex-row flex-wrap h-screen">
-    <div className="p-6 mt-8">
+    <div className="p-6 mt-20">
             <p className="text-xl">Hi! My name is</p>
             <h1 className="neon text-4xl m-4">Karla Gaudet</h1>
             <p className="text-lg"> An Aspiring Software Developer</p>
@@ -215,11 +215,11 @@ return(
 
     </section>
     
-    <Footer/>
+  
     
 
     <Outlet/>
-   
+    <Footer/>
     </>
 )
 };

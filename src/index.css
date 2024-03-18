@@ -8,6 +8,14 @@ html{
     scroll-behavior: smooth;
 }
 
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 
 
 @layer base{
@@ -43,18 +51,32 @@ html{
     }
     .neon-img{
         filter: 
+        drop-shadow(0 0 5px #007777)
         drop-shadow(0 0 16px #007777)
-        drop-shadow(0 0 2px #00FFFF) 
+        drop-shadow(0 0 20px #00FFFF) 
         drop-shadow(0 0 5px #00FFFF) 
-        drop-shadow(0 0 16px #007777);
+
+       
     }
     .neon-yellow{
         filter: 
-        drop-shadow(0 0 1px #777700)
-        drop-shadow(0 0 2px #FFFF00) 
-        drop-shadow(0 0 5px #FFFF00) 
-        drop-shadow(0 0 16px #777700);
+        drop-shadow(0 0 5px #777700) 
+        drop-shadow(0 0 16px #FFFF00) 
+        drop-shadow(0 0 20px #FFFF00) 
+        drop-shadow(0 0 60px #FFFF00)
     }
+
+    .neon-green{
+        filter:
+        drop-shadow(0 0 5px rgb(10, 70, 10))
+        drop-shadow(0 0 5px #00ff00)
+        drop-shadow(0 0 15px #00ff00) 
+        drop-shadow(0 0 20px #00ff00)
+        drop-shadow(0 0 60px #00e600) 
+        
+        
+    }
+
     .work{
         display: flex;
         flex-direction: column;
