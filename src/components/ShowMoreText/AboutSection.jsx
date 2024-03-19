@@ -34,7 +34,7 @@ function AboutSection({handleShowMore, showMore}){
     return (
         <>
         <section className="p-6 mt-14 lg:p-18 lg:relative lg:flex lg:flex-row lg:flex-wrap lg:h-screen">
-            <div className="lg:order-1 lg:flex lg:flex-col lg:pt-25 border-violet-600 border-4 lg:w-2/4">
+            <div className="lg:order-1 lg:flex lg:flex-col lg:pt-25 lg:w-2/4">
             <p className="text-xl lg:text-2xl lg:mb-10 lg:top-[20vh]">A bit about me...</p>
             <h2 className="neon text-2xl m-4 lg:text-5xl lg:ml-5 lg:mb-10 lg:leading-3 lg:inline hidden sm:inline">Developer</h2> 
                 <p className="neon text-2xl lg:leading-3 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden sm:inline">and Beyond</p>
@@ -59,7 +59,7 @@ function AboutSection({handleShowMore, showMore}){
            
          
          
-        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-1/3 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28 border-blue-600 border-4">
+        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-1/3 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28">
             <img className="lg:object-cover"src={me3} alt="picture of Karla Gaudet with her back turned, in a puddle of water splashing with her foot"/>
         </div>
         </section>

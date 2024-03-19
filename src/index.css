@@ -53,9 +53,9 @@ nav{
     }
     .neon-img{
         filter: 
-        drop-shadow(0 0 5px #007777)
-        drop-shadow(0 0 16px #007777)
-        drop-shadow(0 0 20px #00FFFF) 
+        drop-shadow(0 0 1px #007777)
+        drop-shadow(0 0 1px #007777)
+        drop-shadow(0 0 2px #00FFFF) 
         drop-shadow(0 0 5px #00FFFF) 
 
        
@@ -70,11 +70,12 @@ nav{
 
     .neon-green{
         filter:
-        drop-shadow(0 0 5px rgb(10, 70, 10))
+        drop-shadow(0 0 1px rgb(10, 70, 10))
+        drop-shadow(0 0 1px #00e600) 
+        drop-shadow(0 0 1px #00ff00)
+        drop-shadow(0 0 3px #00ff00) 
         drop-shadow(0 0 5px #00ff00)
-        drop-shadow(0 0 15px #00ff00) 
-        drop-shadow(0 0 20px #00ff00)
-        drop-shadow(0 0 60px #00e600) 
+        
         
         
     }
