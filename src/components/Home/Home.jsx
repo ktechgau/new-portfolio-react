@@ -66,7 +66,7 @@ return(
     <div className="p-6 mt-20 lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28">
             <p className="text-xl lg:text-3xl lg:mb-10 lg:top-[25vh]">Hi! My name is</p>
             <h1 className="neon text-4xl m-4 lg:text-7xl lg:mb-10">Karla <span className="lg:ml-10 lg:mr-0 lg:mt-5">Gaudet</span></h1>
-            <p className="text-lg lg:mt-5 lg:justify-center lg;items-center"> An Aspiring Software Developer</p>
+            <p className="text-lg lg:mt-5 lg:justify-center lg:items-center"> Junior Software Developer</p>
             <div className="flex justify-center items-center">
             <Link to="/#about" onClick={() => 
                     {handleScroll(aboutRef.current);}}>

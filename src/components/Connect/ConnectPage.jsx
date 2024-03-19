@@ -18,13 +18,13 @@ return(
     </div>
     </section>
 
-    <section className="h-screen">
-        <div className="mb-12">
+    <section className="h-full">
+        <div className="mb-12 lg:pr-5 lg:pb-10">
         <ContactForm/>
         </div>
    
     
-    <section className="relative flex justify-center items-center h-1/4">
+    <section className="relative flex justify-center items-center h-1/8 lg:hidden">
         <ul>
             <li>{/*insert downloadable resume*/}
                 <p>
@@ -46,8 +46,8 @@ return(
         </ul>
     </section>
 
-    <section className="flex justify-center items-center ">
-        <img className="animate-pulse h-auto w-1/4  neon-yellow"src={wave}/>
+    <section className="flex justify-center items-center p-5 lg:hidden">
+        <img className="animate-pulse h-auto w-1/5  neon-yellow"src={wave}/>
     </section>
 
     </section>
