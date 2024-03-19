@@ -59,7 +59,7 @@ function AboutSection({handleShowMore, showMore}){
            
          
          
-        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-2/6 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28 border-blue-600 border-4">
+        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-1/3 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28 border-blue-600 border-4">
             <img className="lg:object-cover"src={me3} alt="picture of Karla Gaudet with her back turned, in a puddle of water splashing with her foot"/>
         </div>
         </section>

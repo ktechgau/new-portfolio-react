@@ -91,14 +91,14 @@ return(
        <AboutSection handleShowMore={handleToggleShowMore} showMore={showMore}/> 
     </section>
     
-    <section className="relative flex flex-row flex-wrap lg:mt-64 border-amber-300 border-4">
+    <section className="relative flex flex-row flex-wrap lg:mt-64 lg:m-auto lg:justify-center lg:items-center border-amber-300 border-4">
         <div className="p-6 mt-8">
             <p className="text-xl">Learn.Create.Repeat</p>
             <h2 className="neon text-2xl m-4">My Projects</h2>
         </div>
     </section>
 
-    <section className=" p-4 my-4 mx-6 border-t-2 border-r-2 border-dotted border-zinc-300">
+    <section className=" p-4 my-4 mx-6 border-t-2 border-r-2 border-dotted border-zinc-300 lg:flex lg:flex-col lg:justify-center lg:items-left lg:mx-80 lg:px-44">
        <div className="flex items-center justify-between border-b border-gray-500 cursor-pointernpy-2 px-4"
         onClick={handleReactToggle} >
             <span className="text-lg">OpenDoor - Frontend</span>
