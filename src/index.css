@@ -15,7 +15,9 @@ nav{
     width: 100%;
     z-index: 10;
 }
-
+.sm\:hidden {
+    display: none !important;
+}
 
 
 @layer base{
@@ -99,4 +101,5 @@ nav{
         max-height: 200px;
         object-fit: contain;
     }
+
 }

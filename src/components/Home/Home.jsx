@@ -63,28 +63,35 @@ function HomePage(){
 return(
     <>
     <section className="relative flex flex-row flex-wrap h-screen">
-    <div className="p-6 mt-20">
-            <p className="text-xl">Hi! My name is</p>
-            <h1 className="neon text-4xl m-4">Karla Gaudet</h1>
-            <p className="text-lg"> An Aspiring Software Developer</p>
+    <div className="p-6 mt-20 lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28 border-lime-500 border-4">
+            <p className="text-xl lg:text-3xl lg:mb-10 lg:top-[25vh]">Hi! My name is</p>
+            <h1 className="neon text-4xl m-4 lg:text-7xl lg:mb-10">Karla <span className="lg:ml-10 lg:mr-0 lg:mt-5">Gaudet</span></h1>
+            <p className="text-lg lg:mt-5 lg:justify-center lg;items-center"> An Aspiring Software Developer</p>
+            <div className="flex justify-center items-center">
+            <Link to="/#about" onClick={() => 
+                    {handleScroll(aboutRef.current);}}>
+                    <img className="neon-img  animate-bounce hidden lg:inline lg:items-center lg:mt-20" src={arrow}/>
+                </Link>
+            </div>
     </div>
-        <div className="flex items-center p-3 h-full">
-            <div className="relative h-full  w-3/4" >
-                <img className=" z-0  bg-gradient-to-b from-black via-stone-300 object-contain"src={icons} alt="picture of a person's hands typing on a laptop"/>            
-                <img className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md" src={portfoliopic3} alt="Professional picture of Karla Gaudet arms crossed, smiling"/>
+   
+    <div className="flex items-center h-auto lg:w-2/3 lg:h-screen lg:order-1 border-blue-600 border-4">
+        <div className="relative h-auto  w-3/4 border-red-600 border-4 lg:h-screen lg:w-3/4" >
+            <img className=" z-0  bg-gradient-to-b from-black via-stone-300 object-contain h-auto lg:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:h-full lg:w-4/5 "src={icons} alt="picture of a person's hands typing on a laptop"/>            
+            <img className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md lg:top-[22vh] lg:right-[-5vw] lg:w-1/2 lg:h-auto lg:" src={portfoliopic3} alt="Professional picture of Karla Gaudet arms crossed, smiling"/>
                 <Link to="/#about" onClick={() => 
                     {handleScroll(aboutRef.current);}}>
-                    <img className="neon-img m-8 animate-bounce" src={arrow}/>
+                    <img className="neon-img m-8 animate-bounce lg:hidden" src={arrow}/>
                 </Link>
-            </div>      
-        </div>  
+        </div>      
+     </div>  
     </section>
 
-    <section className="relative flex flex-row flex-wrap" id="about" ref={aboutRef} >
+    <section className="relative flex flex-row flex-wrap lg:h-screen" id="about" ref={aboutRef} >
        <AboutSection handleShowMore={handleToggleShowMore} showMore={showMore}/> 
     </section>
     
-    <section className="relative flex flex-row flex-wrap">
+    <section className="relative flex flex-row flex-wrap lg:mt-64 border-amber-300 border-4">
         <div className="p-6 mt-8">
             <p className="text-xl">Learn.Create.Repeat</p>
             <h2 className="neon text-2xl m-4">My Projects</h2>

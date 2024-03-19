@@ -15,18 +15,7 @@ function AboutSection({handleShowMore, showMore}){
             <p>I'm pumped for what lies ahead and can't wait to put my fresh skills to work in this dynamic field!</p>
         </div>
     );
-    // `After a rewarding 17-year tenure owning a thriving beauty salon, I've transitioned into the dynamic realm of IT and Software Development.
-    // \n\n
-    // Having already completed a Certificate IV in IT and with just one month remaining in the project-based bootcamp at She Codes Australia, I'm eager to explore opportunities as a Junior Frontend Developer.
-    // This career shift reflects my passion for technology and coding, and I'm excited to apply my skills and knowledge in this exciting new chapter.
-    // \n\n
-    // Outside of coding, I love soaking up nature's wonders through hiking and snorkeling. As a dedicated mom, wife, and enthusiastic member of a women's softball team, I thrive in teamwork and treasure moments with my loved ones. You'll catch me savoring quotes, making lists, enjoying coffee, and relishing any meal that lets me skip kitchen duty!
-    // \n\n
-    // In a nutshell, my transition from salon owner to aspiring IT pro embodies my ongoing quest for personal growth and adventure. I'm pumped for what lies ahead and can't wait to put my fresh skills to work in this dynamic field!
-    // `;
     
-   
-
     const handleShowMoreCallback = () => {
         // Adjust the height of the content after the About section
         const newHeight = showMore ? 'auto' : 'auto';
@@ -44,14 +33,39 @@ function AboutSection({handleShowMore, showMore}){
 
     return (
         <>
-        <div className="p-6 mt-8">
-            <p className="text-xl">A bit about me...</p>
-            <h2 className="neon text-2xl m-4">Developer and Beyond</h2>
-        <div className="overflow-hidden rounded-full shadow-2xl">
-            <img src={me3} alt="picture of Karla Gaudet with her back turned, in a puddle of water spalshing with her foot"/>
-        </div>
-        <div className={`p-2 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 overflow-wrap ${marginTop}`}>
+        <section className="p-6 mt-14 lg:p-18 lg:relative lg:flex lg:flex-row lg:flex-wrap lg:h-screen">
+            <div className="lg:order-1 lg:flex lg:flex-col lg:pt-25 border-violet-600 border-4 lg:w-2/4">
+            <p className="text-xl lg:text-2xl lg:mb-10 lg:top-[20vh]">A bit about me...</p>
+            <h2 className="neon text-2xl m-4 lg:text-5xl lg:ml-5 lg:mb-10 lg:leading-3 lg:inline hidden sm:inline">Developer</h2> 
+                <p className="neon text-2xl lg:leading-3 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden sm:inline">and Beyond</p>
+                <div className="hidden sm:inline p-8">
+            <div className={`p-4 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 overflow-wrap  ${marginTop} `}>
             <p className="text-left">
+                {showMore 
+                ? text
+                : text.props.children.slice(0, 2)}
+                <a className="underline text-tan" href='#'
+                onClick ={handleReadMoreClick}
+                >
+                {showMore
+                ? 'read less'
+                : 'read more'}
+                </a>
+            </p>
+            </div>
+        </div>
+            <h2 className="neon text-2xl m-4 lg:hidden">Developer and Beyond</h2>
+            </div>
+           
+         
+         
+        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-2/6 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28 border-blue-600 border-4">
+            <img className="lg:object-cover"src={me3} alt="picture of Karla Gaudet with her back turned, in a puddle of water splashing with her foot"/>
+        </div>
+        </section>
+        <section className="p-3">
+        <div className={`p-3 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 overflow-wrap lg:hidden ${marginTop}`}>
+            <p className="text-left lg:hidden">
                 {showMore 
                 ? text
                 : text.props.children.slice(0, 2)}
@@ -64,7 +78,7 @@ function AboutSection({handleShowMore, showMore}){
                 </a>
             </p>
         </div>
-        </div>
+        </section>
         </>  
     )
 
