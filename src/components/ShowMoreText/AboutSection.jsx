@@ -57,7 +57,7 @@ function AboutSection({ handleShowMore, showMore }) {
 
   return (
     <>
-      <section className="p-6 mt-14 lg:p-18 lg:relative lg:flex lg:flex-row lg:flex-wrap lg:h-screen xl:flex xl:flex-row xl:flex-wrap xl:h-full">
+      <section className="p-6 mt-14 xs:mt-[20vh] lg:p-18 lg:relative lg:flex lg:flex-row lg:flex-wrap lg:h-screen xl:flex xl:flex-row xl:flex-wrap xl:h-full">
         <div className="lg:order-1 lg:flex lg:flex-col lg:pt-25 lg:w-2/4 xl:flex l:w-1/2">
           <RevealOnScroll>
             <p className="text-xl lg:text-2xl lg:mb-10 lg:top-[20vh]">
@@ -65,16 +65,16 @@ function AboutSection({ handleShowMore, showMore }) {
             </p>
           </RevealOnScroll>
           <RevealOnScroll>
-            <h2 className="neon text-2xl m-4 lg:text-5xl lg:ml-5 lg:mb-10 lg:leading-3 lg:inline hidden sm:inline md:hidden xl:inline">
+            <h2 className="neon text-2xl m-4 lg:text-5xl lg:ml-5 lg:mb-10 lg:leading-3 lg:inline hidden  md:hidden xl:inline">
               Developer
             </h2>
           </RevealOnScroll>
           <RevealOnScroll>
-            <p className="neon text-2xl lg:leading-20 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden sm:inline md:hidden xl:inline xl:mt-20">
+            <p className="neon text-2xl lg:leading-20 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden md:hidden xl:inline xl:mt-20">
               and Beyond
             </p>
           </RevealOnScroll>
-          <div className="hidden sm:inline md:hidden lg:inline xl:hidden p-8">
+          <div className="hidden  md:hidden lg:inline xl:hidden p-8">
             <div
               className={`p-4 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 overflow-wrap  ${marginTop} `}
             >
@@ -98,7 +98,7 @@ function AboutSection({ handleShowMore, showMore }) {
           </h2>
         </RevealOnScroll>
 
-        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-1/3 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28 md:w-3/5 md:m-auto md:mt-20 xl:w-3/5 xl:h-auto xl:m-auto xl:mt-10 xl:md-10 ">
+        <div className="overflow-hidden rounded-full shadow-2xl xs:mt-10 lg:flex lg:flex-row lg:w-1/3 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28 md:w-3/5 md:m-auto md:mt-20 xl:w-3/5 xl:h-auto xl:m-auto xl:mt-10 xl:md-10 ">
           <img
             className="lg:object-cover xl:object-contain"
             src={me3}

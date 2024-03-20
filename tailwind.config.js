@@ -7,10 +7,11 @@ export default {
   ],
   theme: {
     screens:{
-      sm: '480px',
+      xs: {'max':'395px'},
+      sm: {'min': '396px', 'max': '480px'},
       md: '768px',
-      lg: '1280px',
       xl:'1024px',
+      lg: '1280px',
       xxl: '1440px',
     },
     fontFamily:{

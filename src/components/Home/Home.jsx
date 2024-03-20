@@ -64,15 +64,15 @@ function HomePage() {
       <section className="relative flex flex-row flex-wrap h-screen">
         <div className="p-6 mt-20  lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28 md:w-1/2 md:order-2 md:flex md:pt-32 xl:w-1/2 xl:order-2">
           <div className="md:mr-auto">
-            <p className="text-xl lg:text-3xl lg:mb-10 lg:top-[25vh] md:text-2xl md:mb-10 xl:text-4xl">
+            <p className="text-xl xs:text-base lg:text-3xl lg:mb-10 lg:top-[25vh] md:text-2xl md:mb-10 xl:text-4xl">
               Hi! My name is
             </p>
-            <h1 className="animate-pulse neon text-4xl m-4 lg:text-7xl  lg:mb-10 md:text-6xl md:leading-relaxed md:ml-2 xl:text-8xl xl:leading-relaxed">
+            <h1 className="animate-pulse neon text-4xl m-4 xs:text-1xl lg:text-7xl  lg:mb-10 md:text-6xl md:leading-relaxed md:ml-2 xl:text-8xl xl:leading-relaxed">
               Karla
               <span className="lg:ml-10 lg:mr-0 lg:mt-5  md:mt-5"> Gaudet</span>
             </h1>
             <div>
-              <p className="text-lg lg:mt-5 lg:justify-center lg:items-center md:mt-10 xl:text-2xl xl:ml-10">
+              <p className="text-lg xs:text-base lg:mt-5 lg:justify-center lg:items-center md:mt-10 xl:text-2xl xl:ml-10">
                 Junior Software Developer
               </p>
               <div className="flex justify-center items-center">
@@ -98,24 +98,19 @@ function HomePage() {
               }}
             >
               <img
-                className=" neon-img mt-[30vh] animate-bounce hidden sm:inline xl:hidden"
+                className=" neon-img mt-[30vh] animate-bounce hidden  xl:hidden"
                 src={arrow}
               />
             </Link>
           </div>
         </div>
 
-        <div className="flex items-center h-auto lg:w-2/3 lg:h-screen lg:order-1 md:h-full md:w-1/2 xl:w-1/2">
-          <div className="relative h-auto  w-3/4  lg:h-screen lg:w-3/4 md:h-full md:w-full xl:w-full">
+        <div className="flex items-center h-auto xs:w-3/4 xs:h-full lg:w-2/3 lg:h-screen lg:order-1 md:h-full md:w-1/2 xl:w-1/2">
+          <div className="relative h-auto  w-3/4  xs:h-screen xs:w-[65vw] lg:h-screen lg:w-3/4 md:h-full md:w-full xl:w-full">
             <img
-              className=" z-0  bg-gradient-to-b from-black via-stone-300 object-contain h-auto lg:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:h-full lg:w-4/5 md:h-full md:w-full xl:w-full xl:object-contain"
+              className=" z-[-1]  bg-gradient-to-b from-black via-stone-300 object-contain h-auto xl:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:h-full lg:w-4/5 md:h-full md:w-full xl:w-full xl:object-contain"
               src={icons}
               alt="images of logos for CSS, HTML, REACT and GIT"
-            />
-            <img
-              className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md lg:top-[22vh] lg:right-[-5vw] lg:w-1/2 lg:h-auto md:top-[50vh] md:right-[-11vw] xl:right-[-10vw] xl:top-[53vh] xl:w-[35vw] "
-              src={portfoliopic3}
-              alt="Professional picture of Karla Gaudet arms crossed, smiling"
             />
             <Link
               to="/#about"
@@ -124,10 +119,15 @@ function HomePage() {
               }}
             >
               <img
-                className="neon-img m-8 animate-bounce md:hidden lg:hidden"
+                className="neon-img z-40 m-4 animate-bounce xs:inline xs:mt-[-10vh] md:hidden lg:hidden"
                 src={arrow}
               />
             </Link>
+            <img
+              className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md xs:top-[15vh] xs:right-[-27vw] lg:top-[22vh] lg:right-[-5vw] lg:w-1/2 lg:h-auto md:top-[50vh] md:right-[-11vw] xl:right-[-10vw] xl:top-[53vh] xl:w-[35vw] "
+              src={portfoliopic3}
+              alt="Professional picture of Karla Gaudet arms crossed, smiling"
+            />
           </div>
         </div>
       </section>

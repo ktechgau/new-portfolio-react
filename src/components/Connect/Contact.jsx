@@ -120,7 +120,7 @@ function ContactForm() {
           )}
         </form>
 
-        <section className="relative flex justify-center items-center h-1/8 lg:inline hidden sm:inline md:hidden">
+        <section className="relative flex justify-center items-center h-1/8 lg:inline hidden  md:hidden">
           <div className="flex justify-center items-center p-5 ">
             <img
               className="animate-pulse h-auto w-1/5  neon-yellow lg:inline lg:w-1/4 lg:mt-16 lg:mb-16"
