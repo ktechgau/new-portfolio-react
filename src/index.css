@@ -34,7 +34,12 @@ nav{
         color: tan;
         text-decoration: underline;
     }
+  
    
+}
+
+.dark{
+    background-color:black;
 }
 @layer component{
   

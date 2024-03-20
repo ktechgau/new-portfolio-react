@@ -25,6 +25,7 @@ export default {
         grey: 'rgb(63 63 70)',
       },
     },
+    darkMode:'class',
   },
   plugins: [],
 }

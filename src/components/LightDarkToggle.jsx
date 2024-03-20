@@ -5,20 +5,26 @@ import { FiMoon, FiSun } from "react-icons/fi";
 const TOGGLE_CLASSES =
   "text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10";
 
-const Example = () => {
+const Example = ({ setTheme }) => {
   const [selected, setSelected] = useState("light");
+
+  const handleThemeChange = (theme) => {
+    setSelected(theme);
+    setTheme(theme);
+  };
+
   return (
     <div
-      className={`grid h-[200px] place-content-center px-4 transition-colors ${
-        selected === "light" ? "bg-white" : "bg-slate-900"
+      className={`grid h-[0px] place-content-center transition-colors ${
+        selected === "light" ? "bg-transparent" : "bg-transparent"
       }`}
     >
-      <SliderToggle selected={selected} setSelected={setSelected} />
+      <SliderToggle selected={selected} handleThemeChange={handleThemeChange} />
     </div>
   );
 };
 
-const SliderToggle = ({ selected, setSelected }) => {
+const SliderToggle = ({ selected, handleThemeChange }) => {
   return (
     <div className="relative flex w-fit items-center rounded-full">
       <button
@@ -26,7 +32,7 @@ const SliderToggle = ({ selected, setSelected }) => {
           selected === "light" ? "text-white" : "text-slate-300"
         }`}
         onClick={() => {
-          setSelected("light");
+          handleThemeChange("light");
         }}
       >
         <FiMoon className="relative z-10 text-lg md:text-sm" />
@@ -34,10 +40,10 @@ const SliderToggle = ({ selected, setSelected }) => {
       </button>
       <button
         className={`${TOGGLE_CLASSES} ${
-          selected === "dark" ? "text-white" : "text-slate-800"
+          selected === "dark" ? "text-white" : "text-slate-300"
         }`}
         onClick={() => {
-          setSelected("dark");
+          handleThemeChange("dark");
         }}
       >
         <FiSun className="relative z-10 text-lg md:text-sm" />
@@ -51,7 +57,7 @@ const SliderToggle = ({ selected, setSelected }) => {
         <motion.span
           layout
           transition={{ type: "spring", damping: 15, stiffness: 250 }}
-          className="h-full w-1/2 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600"
+          className="h-full w-1/2 rounded-full border-tan border-solid border-2 "
         />
       </div>
     </div>

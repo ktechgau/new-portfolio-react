@@ -12,8 +12,9 @@ import py from "../../assets/Work/py.png";
 import Footer from "../Footer/Footer.jsx";
 import AboutSection from "../ShowMoreText/AboutSection.jsx";
 import RevealOnScroll from "../RevealOnScroll.jsx";
+import "../../index.css";
 
-function HomePage() {
+function HomePage({ theme, setTheme }) {
   const aboutRef = useRef(null);
   const [showMore, setShowMore] = useState(false);
   const [aboutHeight, setAboutHeight] = useState("auto");
@@ -61,7 +62,11 @@ function HomePage() {
 
   return (
     <>
-      <section className="relative flex flex-row flex-wrap h-screen">
+      <section
+        className={`relative flex flex-row flex-wrap h-screen ${
+          theme === "dark" ? "dark" : ""
+        }`}
+      >
         <div className="p-6 mt-20  lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28 md:w-1/2 md:order-2 md:flex md:pt-32 xl:w-1/2 xl:order-2">
           <div className="md:mr-auto">
             <p className="text-xl lg:text-3xl lg:mb-10 lg:top-[25vh] md:text-2xl md:mb-10 xl:text-4xl">
