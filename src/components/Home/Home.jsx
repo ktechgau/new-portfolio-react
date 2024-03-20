@@ -64,7 +64,7 @@ function HomePage() {
       <section className="relative flex flex-row flex-wrap h-screen">
         <div className="p-6 mt-20  lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28 md:w-1/2 md:order-2 md:flex md:pt-32 xl:w-1/2 xl:order-2">
           <div className="md:mr-auto">
-            <p className="text-xl xs:text-base lg:text-3xl lg:mb-10 lg:top-[25vh] md:text-2xl md:mb-10 xl:text-4xl">
+            <p className="text-l xs:text-base lg:text-3xl lg:mb-10 lg:top-[25vh] md:text-2xl md:mb-10 xl:text-4xl">
               Hi! My name is
             </p>
             <h1 className="animate-pulse neon text-4xl m-4 xs:text-1xl lg:text-7xl  lg:mb-10 md:text-6xl md:leading-relaxed md:ml-2 xl:text-8xl xl:leading-relaxed">
@@ -72,7 +72,7 @@ function HomePage() {
               <span className="lg:ml-10 lg:mr-0 lg:mt-5  md:mt-5"> Gaudet</span>
             </h1>
             <div>
-              <p className="text-lg xs:text-base lg:mt-5 lg:justify-center lg:items-center md:mt-10 xl:text-2xl xl:ml-10">
+              <p className="text-l xs:text-base lg:mt-5 lg:justify-center lg:items-center md:mt-10 xl:text-2xl xl:ml-10">
                 Junior Software Developer
               </p>
               <div className="flex justify-center items-center">
@@ -83,7 +83,7 @@ function HomePage() {
                   }}
                 >
                   <img
-                    className="neon-img  animate-bounce hidden lg:inline lg:items-center lg:mt-20 md:inline md:w-20 md:mt-[30vh] xl:mt-[40vh]"
+                    className="neon-img animate-bounce hidden lg:inline lg:items-center lg:mt-20 md:inline md:w-20 md:mt-[30vh] xl:mt-[40vh]"
                     src={arrow}
                   />
                 </Link>
@@ -98,7 +98,7 @@ function HomePage() {
               }}
             >
               <img
-                className=" neon-img mt-[30vh] animate-bounce hidden  xl:hidden"
+                className="neon-img mt:h-[30vh] animate-bounce hidden xl:hidden "
                 src={arrow}
               />
             </Link>
@@ -106,9 +106,10 @@ function HomePage() {
         </div>
 
         <div className="flex items-center h-auto xs:w-3/4 xs:h-full lg:w-2/3 lg:h-screen lg:order-1 md:h-full md:w-1/2 xl:w-1/2">
-          <div className="relative h-auto  w-3/4  xs:h-screen xs:w-[65vw] lg:h-screen lg:w-3/4 md:h-full md:w-full xl:w-full">
+          <div className="relative h-auto  w-3/4  xs:h-full xs:w-[65vw]  lg:h-screen lg:w-3/4 md:h-full md:w-full xl:w-full">
             <img
-              className=" z-[-1]  bg-gradient-to-b from-black via-stone-300 object-contain h-auto xl:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:h-full lg:w-4/5 md:h-full md:w-full xl:w-full xl:object-contain"
+              className=" z-[-1]  bg-gradient-to-b from-black via-stone-300 object-contain  mb-20
+               xl:bg-gradient-to-r xl:from-black xl:via-stone-300 md:bg-gradient-to-r md:from-black md:via-stone-300 lg:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:h-full lg:w-4/5 md:h-full md:w-full xl:w-full xl:object-contain"
               src={icons}
               alt="images of logos for CSS, HTML, REACT and GIT"
             />
@@ -119,12 +120,12 @@ function HomePage() {
               }}
             >
               <img
-                className="neon-img z-40 m-4 animate-bounce xs:inline xs:mt-[-10vh] md:hidden lg:hidden"
+                className="neon-img z-40 m-4 animate-bounce sm:mt-[-15vh] xs:inline xs:mt-[-38vh] md:hidden lg:hidden "
                 src={arrow}
               />
             </Link>
             <img
-              className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md xs:top-[15vh] xs:right-[-27vw] lg:top-[22vh] lg:right-[-5vw] lg:w-1/2 lg:h-auto md:top-[50vh] md:right-[-11vw] xl:right-[-10vw] xl:top-[53vh] xl:w-[35vw] "
+              className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md sm:top-[27vh] xs:top-[15vh] xs:right-[-27vw] lg:top-[22vh] lg:right-[-5vw] lg:w-1/2 lg:h-auto md:top-[50vh] md:right-[-11vw] xl:right-[-10vw] xl:top-[53vh] xl:w-[35vw] "
               src={portfoliopic3}
               alt="Professional picture of Karla Gaudet arms crossed, smiling"
             />
@@ -143,11 +144,11 @@ function HomePage() {
         />
       </section>
 
-      <section className="relative flex flex-row flex-wrap lg:mt-60 lg:m-auto lg:justify-center lg:items-center xl:mt-auto">
+      <section className="relative flex flex-row flex-wrap lg:mt-32 lg:justify-center lg:items-center xl:mt-auto">
         <div className="p-6 mt-8">
           <RevealOnScroll>
             <p className="text-xl">Learn.Create.Repeat</p>
-            <h2 className="neon text-2xl m-4">My Projects</h2>
+            <h2 className="neon text-2xl m-4 lg:text-5xl">My Projects</h2>
           </RevealOnScroll>
         </div>
       </section>

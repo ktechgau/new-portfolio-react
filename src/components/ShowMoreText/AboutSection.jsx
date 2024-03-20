@@ -57,7 +57,7 @@ function AboutSection({ handleShowMore, showMore }) {
 
   return (
     <>
-      <section className="p-6 mt-14 xs:mt-[20vh] lg:p-18 lg:relative lg:flex lg:flex-row lg:flex-wrap lg:h-screen xl:flex xl:flex-row xl:flex-wrap xl:h-full">
+      <section className="px-10 mt-20 sm:pt-32 xs:mt-[20vh] lg:p-18 lg:relative lg:flex lg:flex-row lg:flex-wrap lg:h-screen xl:flex xl:flex-row xl:flex-wrap xl:h-full">
         <div className="lg:order-1 lg:flex lg:flex-col lg:pt-25 lg:w-2/4 xl:flex l:w-1/2">
           <RevealOnScroll>
             <p className="text-xl lg:text-2xl lg:mb-10 lg:top-[20vh]">
