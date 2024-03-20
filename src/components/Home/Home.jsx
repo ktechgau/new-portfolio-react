@@ -62,7 +62,7 @@ function HomePage() {
   return (
     <>
       <section className="relative flex flex-row flex-wrap h-screen">
-        <div className="p-6 mt-20   border-red-500 border-4  lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28 md:w-1/2 md:order-2 md:flex md:pt-32 xl:w-1/2 xl:order-2">
+        <div className="p-6 mt-20  lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28 md:w-1/2 md:order-2 md:flex md:pt-32 xl:w-1/2 xl:order-2">
           <div className="md:mr-auto">
             <p className="text-xl lg:text-3xl lg:mb-10 lg:top-[25vh] md:text-2xl md:mb-10 xl:text-4xl">
               Hi! My name is
@@ -98,7 +98,7 @@ function HomePage() {
               }}
             >
               <img
-                className="neon-img  animate-bounce hidden lg:inline lg:items-center lg:mt-20 xl:hidden"
+                className="neon-img  animate-bounce hidden  xl:hidden"
                 src={arrow}
               />
             </Link>
@@ -106,7 +106,7 @@ function HomePage() {
         </div>
 
         <div className="flex items-center h-auto lg:w-2/3 lg:h-screen lg:order-1 md:h-full md:w-1/2 xl:w-1/2">
-          <div className="relative h-auto  border-lime-600  border-4 w-3/4  lg:h-screen lg:w-3/4 md:h-full md:w-full xl:w-full">
+          <div className="relative h-auto  w-3/4  lg:h-screen lg:w-3/4 md:h-full md:w-full xl:w-full">
             <img
               className=" z-0  bg-gradient-to-b from-black via-stone-300 object-contain h-auto lg:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:h-full lg:w-4/5 md:h-full md:w-full xl:w-full xl:object-contain"
               src={icons}
@@ -143,7 +143,7 @@ function HomePage() {
         />
       </section>
 
-      <section className="relative flex flex-row flex-wrap lg:mt-64 lg:m-auto lg:justify-center lg:items-center xl:mt-auto">
+      <section className="relative flex flex-row flex-wrap lg:mt-60 lg:m-auto lg:justify-center lg:items-center xl:mt-auto">
         <div className="p-6 mt-8">
           <RevealOnScroll>
             <p className="text-xl">Learn.Create.Repeat</p>
@@ -183,13 +183,24 @@ function HomePage() {
                 using APIs created with Django REST. This was a project
                 assignment of the She Codes Plus program.
               </p>
-              <a
-                className="underline text-tan "
-                href="https://github.com/ktechgau/crowdfunding_front_end"
-                target="_blank"
-              >
-                View code
-              </a>
+              <p>
+                <a
+                  className="underline text-tan "
+                  href="https://opendoor.netlify.app/"
+                  target="_blank"
+                >
+                  View Live
+                </a>
+              </p>
+              <p>
+                <a
+                  className="underline text-tan "
+                  href="https://github.com/ktechgau/crowdfunding_front_end"
+                  target="_blank"
+                >
+                  View code
+                </a>
+              </p>
             </div>
           </article>
         )}
@@ -348,13 +359,24 @@ function HomePage() {
                 Australia. This project was not deployed. This was a project
                 assignment of the She Codes Plus program.
               </p>
-              <a
-                className="underline text-tan "
-                href="https://github.com/ktechgau/she_codes_news"
-                target="_blank"
-              >
-                View code
-              </a>
+              <p>
+                <a
+                  className="underline text-tan "
+                  href="https://www.youtube.com/watch?v=RX3jeoCbZSg"
+                  target="_blank"
+                >
+                  View Video
+                </a>
+              </p>
+              <p>
+                <a
+                  className="underline text-tan "
+                  href="https://github.com/ktechgau/she_codes_news"
+                  target="_blank"
+                >
+                  View code
+                </a>
+              </p>
             </div>
           </article>
         )}

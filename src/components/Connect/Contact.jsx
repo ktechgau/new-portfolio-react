@@ -49,7 +49,7 @@ function ContactForm() {
 
   return (
     <>
-      <section className=" m-3 lg:flex lg:flex-row lg:items-left lg:pl-0 lg:m-0 lg:h-ful xl:h-full">
+      <section className=" m-3 lg:flex lg:flex-row lg:items-left lg:pl-0 lg:m-0 lg:h-full xl:h-full">
         <form
           className="bg-gradient-to-b from-black via-stone-300 shadow-md rounded px-8 pt-6 pb-8 mb-4 lg:bg-gradient-to-r lg:from-black lg:via-stone-300  lg:w-3/4 lg:h-auto lg:flex lg:flex-col lg:justify-center"
           onSubmit={handleSubmit}

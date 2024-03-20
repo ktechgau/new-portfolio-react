@@ -65,12 +65,12 @@ function AboutSection({ handleShowMore, showMore }) {
             </p>
           </RevealOnScroll>
           <RevealOnScroll>
-            <h2 className="neon text-2xl m-4 lg:text-5xl lg:ml-5 lg:mb-10 lg:leading-3 lg:inline hidden sm:inline md:hidden">
+            <h2 className="neon text-2xl m-4 lg:text-5xl lg:ml-5 lg:mb-10 lg:leading-3 lg:inline hidden sm:inline md:hidden xl:inline">
               Developer
             </h2>
           </RevealOnScroll>
           <RevealOnScroll>
-            <p className="neon text-2xl lg:leading-20 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden sm:inline md:hidden xl:mb-none">
+            <p className="neon text-2xl lg:leading-20 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden sm:inline md:hidden xl:inline xl:mt-20">
               and Beyond
             </p>
           </RevealOnScroll>
