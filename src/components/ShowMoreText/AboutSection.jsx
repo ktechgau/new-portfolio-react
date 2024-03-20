@@ -65,16 +65,16 @@ function AboutSection({ handleShowMore, showMore }) {
             </p>
           </RevealOnScroll>
           <RevealOnScroll>
-            <h2 className="neon text-2xl m-4 lg:text-5xl lg:ml-5 lg:mb-10 lg:leading-3 lg:inline hidden sm:inline">
+            <h2 className="neon text-2xl m-4 lg:text-5xl lg:ml-5 lg:mb-10 lg:leading-3 lg:inline hidden sm:inline md:hidden">
               Developer
             </h2>
           </RevealOnScroll>
           <RevealOnScroll>
-            <p className="neon text-2xl lg:leading-20 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden sm:inline">
+            <p className="neon text-2xl lg:leading-20 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden sm:inline md:hidden">
               and Beyond
             </p>
           </RevealOnScroll>
-          <div className="hidden sm:inline p-8">
+          <div className="hidden sm:inline md:hidden lg:inline p-8">
             <div
               className={`p-4 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 overflow-wrap  ${marginTop} `}
             >
@@ -97,7 +97,7 @@ function AboutSection({ handleShowMore, showMore }) {
           </RevealOnScroll>
         </div>
 
-        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-1/3 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28">
+        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-1/3 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28 md:w-3/5 md:m-auto md:mt-20">
           <img
             className="lg:object-cover"
             src={me3}

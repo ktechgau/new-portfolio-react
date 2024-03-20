@@ -62,17 +62,21 @@ function HomePage() {
   return (
     <>
       <section className="relative flex flex-row flex-wrap h-screen">
-        <div className="p-6 mt-20 lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28">
-          <p className="text-xl lg:text-3xl lg:mb-10 lg:top-[25vh]">
-            Hi! My name is
-          </p>
-          <h1 className="animate-pulse neon text-4xl m-4 lg:text-7xl lg:mb-10">
-            Karla <span className="lg:ml-10 lg:mr-0 lg:mt-5">Gaudet</span>
-          </h1>
-          <p className="text-lg lg:mt-5 lg:justify-center lg:items-center">
-            {" "}
-            Junior Software Developer
-          </p>
+        <div className="p-6 mt-20   border-red-500 border-4  lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28 md:w-full md:flex ">
+          <div className="md:mr-auto">
+            <p className="text-xl lg:text-3xl lg:mb-10 lg:top-[25vh]">
+              Hi! My name is
+            </p>
+            <h1 className="animate-pulse neon text-4xl m-4 lg:text-7xl  lg:mb-10">
+              Karla
+              <span className="lg:ml-10 lg:mr-0 lg:mt-5"> Gaudet</span>
+            </h1>
+            <div>
+              <p className="text-lg lg:mt-5 lg:justify-center lg:items-center">
+                Junior Software Developer
+              </p>
+            </div>
+          </div>
           <div className="flex justify-center items-center">
             <Link
               to="/#about"
@@ -89,14 +93,14 @@ function HomePage() {
         </div>
 
         <div className="flex items-center h-auto lg:w-2/3 lg:h-screen lg:order-1">
-          <div className="relative h-auto  w-3/4 lg:h-screen lg:w-3/4">
+          <div className="relative h-auto  border-lime-600  border-4 w-3/4 md:h:screen md:w-1/2 lg:h-screen lg:w-3/4 ">
             <img
               className=" z-0  bg-gradient-to-b from-black via-stone-300 object-contain h-auto lg:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:h-full lg:w-4/5 "
               src={icons}
-              alt="picture of a person's hands typing on a laptop"
+              alt="images of logos for CSS, HTML, REACT and GIT"
             />
             <img
-              className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md lg:top-[22vh] lg:right-[-5vw] lg:w-1/2 lg:h-auto lg:"
+              className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md lg:top-[22vh] lg:right-[-5vw] lg:w-1/2 lg:h-auto "
               src={portfoliopic3}
               alt="Professional picture of Karla Gaudet arms crossed, smiling"
             />
