@@ -98,7 +98,7 @@ function HomePage() {
               }}
             >
               <img
-                className="neon-img  animate-bounce hidden  xl:hidden"
+                className=" neon-img mt-[30vh] animate-bounce hidden sm:inline xl:hidden"
                 src={arrow}
               />
             </Link>
