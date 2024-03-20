@@ -62,19 +62,32 @@ function HomePage() {
   return (
     <>
       <section className="relative flex flex-row flex-wrap h-screen">
-        <div className="p-6 mt-20   border-red-500 border-4  lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28 md:w-full md:flex ">
+        <div className="p-6 mt-20   border-red-500 border-4  lg:w-1/3 lg:order-2 lg:flex lg:flex-col lg:pt-28 md:w-1/2 md:order-2 md:flex md:pt-32 xl:w-1/2 xl:order-2">
           <div className="md:mr-auto">
-            <p className="text-xl lg:text-3xl lg:mb-10 lg:top-[25vh]">
+            <p className="text-xl lg:text-3xl lg:mb-10 lg:top-[25vh] md:text-2xl md:mb-10 xl:text-4xl">
               Hi! My name is
             </p>
-            <h1 className="animate-pulse neon text-4xl m-4 lg:text-7xl  lg:mb-10">
+            <h1 className="animate-pulse neon text-4xl m-4 lg:text-7xl  lg:mb-10 md:text-6xl md:leading-relaxed md:ml-2 xl:text-8xl xl:leading-relaxed">
               Karla
-              <span className="lg:ml-10 lg:mr-0 lg:mt-5"> Gaudet</span>
+              <span className="lg:ml-10 lg:mr-0 lg:mt-5  md:mt-5"> Gaudet</span>
             </h1>
             <div>
-              <p className="text-lg lg:mt-5 lg:justify-center lg:items-center">
+              <p className="text-lg lg:mt-5 lg:justify-center lg:items-center md:mt-10 xl:text-2xl xl:ml-10">
                 Junior Software Developer
               </p>
+              <div className="flex justify-center items-center">
+                <Link
+                  to="/#about"
+                  onClick={() => {
+                    handleScroll(aboutRef.current);
+                  }}
+                >
+                  <img
+                    className="neon-img  animate-bounce hidden lg:inline lg:items-center lg:mt-20 md:inline md:w-20 md:mt-[30vh] xl:mt-[40vh]"
+                    src={arrow}
+                  />
+                </Link>
+              </div>
             </div>
           </div>
           <div className="flex justify-center items-center">
@@ -85,22 +98,22 @@ function HomePage() {
               }}
             >
               <img
-                className="neon-img  animate-bounce hidden lg:inline lg:items-center lg:mt-20"
+                className="neon-img  animate-bounce hidden lg:inline lg:items-center lg:mt-20 xl:hidden"
                 src={arrow}
               />
             </Link>
           </div>
         </div>
 
-        <div className="flex items-center h-auto lg:w-2/3 lg:h-screen lg:order-1">
-          <div className="relative h-auto  border-lime-600  border-4 w-3/4 md:h:screen md:w-1/2 lg:h-screen lg:w-3/4 ">
+        <div className="flex items-center h-auto lg:w-2/3 lg:h-screen lg:order-1 md:h-full md:w-1/2 xl:w-1/2">
+          <div className="relative h-auto  border-lime-600  border-4 w-3/4  lg:h-screen lg:w-3/4 md:h-full md:w-full xl:w-full">
             <img
-              className=" z-0  bg-gradient-to-b from-black via-stone-300 object-contain h-auto lg:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:h-full lg:w-4/5 "
+              className=" z-0  bg-gradient-to-b from-black via-stone-300 object-contain h-auto lg:bg-gradient-to-r lg:from-black lg:via-stone-300 lg:h-full lg:w-4/5 md:h-full md:w-full xl:w-full xl:object-contain"
               src={icons}
               alt="images of logos for CSS, HTML, REACT and GIT"
             />
             <img
-              className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md lg:top-[22vh] lg:right-[-5vw] lg:w-1/2 lg:h-auto "
+              className="absolute top-[27vh] right-[-20vw] w-3/4 h-auto rounded-md lg:top-[22vh] lg:right-[-5vw] lg:w-1/2 lg:h-auto md:top-[50vh] md:right-[-11vw] xl:right-[-10vw] xl:top-[53vh] xl:w-[35vw] "
               src={portfoliopic3}
               alt="Professional picture of Karla Gaudet arms crossed, smiling"
             />
@@ -111,7 +124,7 @@ function HomePage() {
               }}
             >
               <img
-                className="neon-img m-8 animate-bounce lg:hidden"
+                className="neon-img m-8 animate-bounce md:hidden lg:hidden"
                 src={arrow}
               />
             </Link>
@@ -130,7 +143,7 @@ function HomePage() {
         />
       </section>
 
-      <section className="relative flex flex-row flex-wrap lg:mt-64 lg:m-auto lg:justify-center lg:items-center">
+      <section className="relative flex flex-row flex-wrap lg:mt-64 lg:m-auto lg:justify-center lg:items-center xl:mt-auto">
         <div className="p-6 mt-8">
           <RevealOnScroll>
             <p className="text-xl">Learn.Create.Repeat</p>
@@ -139,7 +152,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className=" p-4 my-4 mx-6 border-t-2 border-r-2 border-dotted border-zinc-300 lg:flex lg:flex-col lg:justify-center lg:items-left lg:mx-80 lg:px-44">
+      <section className=" p-4 my-4 mx-6 border-t-2 border-r-2 border-dotted border-zinc-300 lg:flex lg:flex-col lg:justify-center lg:items-left lg:mx-80 lg:px-44 xl:flex xl:flex-col xl:justify-center xl:items-left xl:mx-10 xl:p-5 ">
         <div
           className="flex items-center justify-between border-b border-gray-500 cursor-pointernpy-2 px-4"
           onClick={handleReactToggle}

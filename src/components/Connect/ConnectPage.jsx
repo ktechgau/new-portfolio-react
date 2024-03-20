@@ -4,6 +4,7 @@ import wave from "../../assets/Contact/wave.png";
 import download from "../../assets/Work/download.png";
 import ContactForm from "../../components/Connect/Contact.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
+import RevealOnScroll from "../RevealOnScroll.jsx";
 import "../../index.css";
 
 function ConnectPage() {
@@ -18,7 +19,7 @@ function ConnectPage() {
         </div>
       </section>
 
-      <section className="h-full">
+      <section className="h-full xl:h-[76vh]">
         <div className="mb-12 lg:pr-5 lg:pb-10">
           <ContactForm />
         </div>
@@ -66,7 +67,6 @@ function ConnectPage() {
           <img className="animate-pulse h-auto w-1/5  neon-yellow" src={wave} />
         </section>
       </section>
-
       <Footer />
     </>
   );

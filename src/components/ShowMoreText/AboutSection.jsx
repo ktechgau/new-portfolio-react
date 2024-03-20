@@ -57,8 +57,8 @@ function AboutSection({ handleShowMore, showMore }) {
 
   return (
     <>
-      <section className="p-6 mt-14 lg:p-18 lg:relative lg:flex lg:flex-row lg:flex-wrap lg:h-screen">
-        <div className="lg:order-1 lg:flex lg:flex-col lg:pt-25 lg:w-2/4">
+      <section className="p-6 mt-14 lg:p-18 lg:relative lg:flex lg:flex-row lg:flex-wrap lg:h-screen xl:flex xl:flex-row xl:flex-wrap xl:h-full">
+        <div className="lg:order-1 lg:flex lg:flex-col lg:pt-25 lg:w-2/4 xl:flex l:w-1/2">
           <RevealOnScroll>
             <p className="text-xl lg:text-2xl lg:mb-10 lg:top-[20vh]">
               A bit about me...
@@ -70,11 +70,11 @@ function AboutSection({ handleShowMore, showMore }) {
             </h2>
           </RevealOnScroll>
           <RevealOnScroll>
-            <p className="neon text-2xl lg:leading-20 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden sm:inline md:hidden">
+            <p className="neon text-2xl lg:leading-20 lg:ml-36 lg:text-5xl lg:mb-10 lg:inline hidden sm:inline md:hidden xl:mb-none">
               and Beyond
             </p>
           </RevealOnScroll>
-          <div className="hidden sm:inline md:hidden lg:inline p-8">
+          <div className="hidden sm:inline md:hidden lg:inline xl:hidden p-8">
             <div
               className={`p-4 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 overflow-wrap  ${marginTop} `}
             >
@@ -90,16 +90,17 @@ function AboutSection({ handleShowMore, showMore }) {
               </p>
             </div>
           </div>
-          <RevealOnScroll>
-            <h2 className="neon text-2xl m-4 lg:hidden">
-              Developer and Beyond
-            </h2>
-          </RevealOnScroll>
         </div>
 
-        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-1/3 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28 md:w-3/5 md:m-auto md:mt-20">
+        <RevealOnScroll>
+          <h2 className="neon text-2xl m-4 lg:hidden xl:hidden">
+            Developer and Beyond
+          </h2>
+        </RevealOnScroll>
+
+        <div className="overflow-hidden rounded-full shadow-2xl lg:flex lg:flex-row lg:w-1/3 lg:h-5/6 lg:m-auto lg:order-2 lg:ml-28 md:w-3/5 md:m-auto md:mt-20 xl:w-3/5 xl:h-auto xl:m-auto xl:mt-10 xl:md-10 ">
           <img
-            className="lg:object-cover"
+            className="lg:object-cover xl:object-contain"
             src={me3}
             alt="picture of Karla Gaudet with her back turned, in a puddle of water splashing with her foot"
           />
@@ -107,9 +108,9 @@ function AboutSection({ handleShowMore, showMore }) {
       </section>
       <section className="p-3">
         <div
-          className={`p-3 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 overflow-wrap lg:hidden ${marginTop}`}
+          className={`p-3 my-8 border-t-2 border-l-2 border-dotted border-zinc-300 overflow-wrap lg:hidden xl:flex xl:inline${marginTop}`}
         >
-          <p className="text-left lg:hidden">
+          <p className="text-left lg:hidden xl:inline">
             {showMore ? text : text.props.children.slice(0, 2)}
             <a
               className="underline text-tan"
