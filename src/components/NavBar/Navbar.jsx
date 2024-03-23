@@ -4,6 +4,7 @@ import burger from "../../assets/NavBar/burger.png";
 import close from "../../assets/NavBar/close.png";
 import logo from "../../assets/NavBar/logo.png";
 import linkedin from "../../assets/NavBar/linkedin.png";
+import Switcher from "../DarkMode/Switcher.jsx";
 import "../../index.css";
 
 function NavBar() {
@@ -15,7 +16,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="bg-black border-gray-200 text-white">
+      <nav className=" border-gray-200">
         <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             to="/"
@@ -29,6 +30,10 @@ function NavBar() {
           </Link>
 
           {/* Hamburger menu for screens 768px smaller */}
+
+          <div className="lg:hidden">
+            <Switcher />
+          </div>
           <div className="block lg:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -61,6 +66,9 @@ function NavBar() {
                     alt="Linkedin Icon that takes yo to my LinkedIn profile"
                   />
                 </a>
+              </li>
+              <li>
+                <Switcher />
               </li>
             </ul>
           </div>

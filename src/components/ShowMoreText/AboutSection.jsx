@@ -11,7 +11,7 @@ function AboutSection({ handleShowMore, showMore }) {
       <p className="mb-3">
         Having already completed a Certificate IV in IT and with just one month
         remaining in the project-based bootcamp at She Codes Australia, I'm
-        eager to explore opportunities as a Junior Frontend Developer.{" "}
+        eager to explore opportunities as a Junior Frontend Developer.
       </p>
       <p className="mb-3">
         This career shift reflects my passion for technology and coding, and I'm

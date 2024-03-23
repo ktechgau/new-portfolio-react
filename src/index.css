@@ -14,11 +14,17 @@ nav{
     left: 0;
     width: 100%;
     z-index: 10;
+    background-color: black;
+    
 }
 .sm\:hidden {
     display: none !important;
 }
 
+.dark{
+    background-color:#000;
+    color: whitesmoke;
+}
 
 @layer base{
     .li{
